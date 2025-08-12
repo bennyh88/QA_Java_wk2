@@ -15,13 +15,25 @@ public class Program {
 		
 		for (Animal animal : animals) {
 			System.out.println(animal.name);
-			if (animal instanceof Bird b) {
-				//Bird bird = (Bird) animal;
-				b.makeNest();
+//			if (animal instanceof Bird b) {
+//				//Bird bird = (Bird) animal;
+//				b.makeNest();
+//			}
+			if (animal instanceof Flyable a) {
+				a.fly();
 			}
+			if (animal instanceof Swimmable a) {
+				a.swim();
+			}
+			if (animal instanceof Movable a) {
+				a.move();
+			}
+			
 		}
 		
 	
 	}
+	
+	
 
 }
