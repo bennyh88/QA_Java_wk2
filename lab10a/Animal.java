@@ -1,0 +1,14 @@
+package lab10a;
+
+public abstract class Animal {
+	AnimalType animalType;
+	String name;
+	
+	Animal(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+}
