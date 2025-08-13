@@ -15,6 +15,13 @@ class Tests {
 
 	// userId must not be null
 	@Test
+	public void testLoginNullUserId() {
+		String userId = null, password = "Freddy99";
+		assertFalse(security.login(userId, password));
+	}
+	
+	// userId must not be empty
+	@Test
 	public void testLoginEmptyUserId() {
 		String userId = "", password = "Freddy99";
 		assertFalse(security.login(userId, password));
